@@ -1,0 +1,22 @@
+RAAD VBA APP - DOWNLOAD & START
+
+1. Extract this ZIP to a folder on your computer.
+2. Open: نظام_رعد_لإدارة_المخزون_والعجوزات_v9_App.xlsm  (the file ending in _App.xlsm)
+   Do NOT open the original .xlsx for the app - it has no macros.
+3. If Windows blocks the downloaded file: right-click it > Properties > check "Unblock" > Apply.
+4. Open in Microsoft Excel and click "Enable Macros" / "Enable Content".
+5. The dashboard opens automatically. If not, click "Open Raad App" on the first sheet,
+   or press Alt+F8 and run ShowRaadApp.
+6. Agent mode is default. To use Admin, choose "Admin" in the role box and click
+   "Switch Mode"; the first time you will create your own PIN.
+7. For full Add/Update/Delete select dataset:
+   "Daily archive - FULL CRUD"  (sheet: سجل_الأرشيف_اليومي)
+
+Files included:
+- نظام_رعد_لإدارة_المخزون_والعجوزات_v9_App.xlsm   <-- OPEN THIS
+- README.md                     full guide
+- File_Audit.md / Field_Audit.csv / Extra_Text_Cells.csv   Step 1 audit
+- UI_Layout_and_Controls.md     Step 2 controls + RGB/Hex
+- VBA/                          Step 3 sources, .frm, .cls, one-click AutoBuilder
+- tools/                        regenerating script + requirements
+- Original source workbook is also included for reference only.

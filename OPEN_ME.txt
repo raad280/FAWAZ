@@ -1,0 +1,11 @@
+RAAD APP - WORKBOOK ONLY
+
+1. Extract this ZIP.
+2. Open: نظام_رعد_لإدارة_المخزون_والعجوزات_v9_App.xlsm
+3. If Windows blocks it: right-click > Properties > Unblock > Apply.
+4. In Excel click "Enable Macros / Enable Content".
+5. Dashboard opens automatically. If not: click "Open Raad App" on sheet 1,
+   or Alt+F8 > run ShowRaadApp.
+6. For full Add/Update/Delete choose dataset "Daily archive - FULL CRUD".
+
+Do not open the original .xlsx - it contains no macros.

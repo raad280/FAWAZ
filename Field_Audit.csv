@@ -1,0 +1,463 @@
+group_key,sheet_index,sheet_name,group_label,header_row,first_col,last_col,column_letter,column_number,header_text,detected_type,formula_column,formula_example,dropdown_values,number_format,sample_value,data_rows
+DASH_KPI_LABELS,1,لوحة_التحكم_والرئيسية,Dashboard KPI labels,13,B,J,B,2,إجمالي استهلاك البان الموحد,Formula - read-only,Yes,='مخزون_البان_الموحد'!F6,,"#,##0"" حبة""",='مخزون_البان_الموحد'!F6,14:14
+DASH_KPI_LABELS,1,لوحة_التحكم_والرئيسية,Dashboard KPI labels,13,B,J,C,3,,Text / blank,No,,,General,,14:14
+DASH_KPI_LABELS,1,لوحة_التحكم_والرئيسية,Dashboard KPI labels,13,B,J,D,4,فارق مخزون البان الموحد,Formula - read-only,Yes,='مخزون_البان_الموحد'!I6,,"+#,##0;-#,##0;0",='مخزون_البان_الموحد'!I6,14:14
+DASH_KPI_LABELS,1,لوحة_التحكم_والرئيسية,Dashboard KPI labels,13,B,J,E,5,,Text / blank,No,,,General,,14:14
+DASH_KPI_LABELS,1,لوحة_التحكم_والرئيسية,Dashboard KPI labels,13,B,J,F,6,عدد الأصناف ذات العجز,Formula - read-only,Yes,"=COUNTIF(H18:H28,""<0"")",,"#,##0"" صنف""","=COUNTIF(H18:H28,""<0"")",14:14
+DASH_KPI_LABELS,1,لوحة_التحكم_والرئيسية,Dashboard KPI labels,13,B,J,G,7,,Text / blank,No,,,General,,14:14
+DASH_KPI_LABELS,1,لوحة_التحكم_والرئيسية,Dashboard KPI labels,13,B,J,H,8,عدد الأصناف ذات الزيادة,Formula - read-only,Yes,"=COUNTIF(H18:H28,"">0"")",,"#,##0"" صنف""","=COUNTIF(H18:H28,"">0"")",14:14
+DASH_KPI_LABELS,1,لوحة_التحكم_والرئيسية,Dashboard KPI labels,13,B,J,I,9,,Text / blank,No,,,General,,14:14
+DASH_KPI_LABELS,1,لوحة_التحكم_والرئيسية,Dashboard KPI labels,13,B,J,J,10,عدد الأصناف المطابقة 100%,Formula - read-only,Yes,"=COUNTIF(H18:H28,0)",,"#,##0"" صنف""","=COUNTIF(H18:H28,0)",14:14
+DASH_KPI_TABLE,1,لوحة_التحكم_والرئيسية,Dashboard KPI table,17,B,K,B,2,القسم,Text / blank,No,,,General,البان الموحد,18:28
+DASH_KPI_TABLE,1,لوحة_التحكم_والرئيسية,Dashboard KPI table,17,B,K,C,3,الصنف / المادة الخام,Text / blank,No,,,General,خبز البان (برجر + بروست),18:28
+DASH_KPI_TABLE,1,لوحة_التحكم_والرئيسية,Dashboard KPI table,17,B,K,D,4,وحدة القياس,Text / blank,No,,,General,حبة,18:28
+DASH_KPI_TABLE,1,لوحة_التحكم_والرئيسية,Dashboard KPI table,17,B,K,E,5,إجمالي المتاح,Formula - read-only,Yes,='مخزون_البان_الموحد'!D6,,"#,##0.00",='مخزون_البان_الموحد'!D6,18:28
+DASH_KPI_TABLE,1,لوحة_التحكم_والرئيسية,Dashboard KPI table,17,B,K,F,6,الاستهلاك الفعلي,Formula - read-only,Yes,='مخزون_البان_الموحد'!F6,,"#,##0.00",='مخزون_البان_الموحد'!F6,18:28
+DASH_KPI_TABLE,1,لوحة_التحكم_والرئيسية,Dashboard KPI table,17,B,K,G,7,المتبقي (جرد / نظري),Formula - read-only,Yes,='مخزون_البان_الموحد'!H6,,"#,##0.00",='مخزون_البان_الموحد'!H6,18:28
+DASH_KPI_TABLE,1,لوحة_التحكم_والرئيسية,Dashboard KPI table,17,B,K,H,8,صافي الفارق (عجز / زيادة),Formula - read-only,Yes,='مخزون_البان_الموحد'!I6,,"+#,##0.00;-#,##0.00;0",='مخزون_البان_الموحد'!I6,18:28
+DASH_KPI_TABLE,1,لوحة_التحكم_والرئيسية,Dashboard KPI table,17,B,K,I,9,نسبة الانحراف %,Formula - read-only,Yes,"=IF(E18=0, 0, H18/E18)",,+0.0%;-0.0%;0.0%,"=IF(E18=0, 0, H18/E18)",18:28
+DASH_KPI_TABLE,1,لوحة_التحكم_والرئيسية,Dashboard KPI table,17,B,K,J,10,الحالة الرقابية,Formula - read-only,Yes,"=IF(H18=0, ""مطابق"", IF(H18<0, ""عجز"", ""زيادة""))",,General,"=IF(H18=0, ""مطابق"", IF(H18<0, ""عجز"", ""زيادة""))",18:28
+DASH_KPI_TABLE,1,لوحة_التحكم_والرئيسية,Dashboard KPI table,17,B,K,K,11,ملاحظات التدقيق,Text / blank,No,,,General,مخزون مركزي موحد للأقسام,18:28
+DAILY_INPUT,2,محطة_الإدخال_اليومي,Daily input station,5,A,G,A,1,القسم,Text / blank,No,,,General,البان الموحد,6:16
+DAILY_INPUT,2,محطة_الإدخال_اليومي,Daily input station,5,A,G,B,2,المادة الخام / الصنف الرئيسي,Text / blank,No,,,General,خبز البان (برجر + بروست),6:16
+DAILY_INPUT,2,محطة_الإدخال_اليومي,Daily input station,5,A,G,C,3,وحدة القياس,Text / blank,No,,,General,حبة,6:16
+DAILY_INPUT,2,محطة_الإدخال_اليومي,Daily input station,5,A,G,D,4,الرصيد السابق (افتتاحي),Formula - read-only,Yes,='مخزون_البان_الموحد'!B6,,"#,##0.00",='مخزون_البان_الموحد'!B6,6:16
+DAILY_INPUT,2,محطة_الإدخال_اليومي,Daily input station,5,A,G,E,5,المنصرف الجديد (وارد),Formula - read-only,Yes,='مخزون_البان_الموحد'!C6,,"#,##0.00",='مخزون_البان_الموحد'!C6,6:16
+DAILY_INPUT,2,محطة_الإدخال_اليومي,Daily input station,5,A,G,F,6,المبيعات / الاستهلاك الفعلي,Formula - read-only,Yes,='مخزون_البان_الموحد'!F6,,"#,##0.00",='مخزون_البان_الموحد'!F6,6:16
+DAILY_INPUT,2,محطة_الإدخال_اليومي,Daily input station,5,A,G,G,7,الجرد الفعلي (نهاية اليوم),Formula - read-only,Yes,='مخزون_البان_الموحد'!H6,,"#,##0.00",='مخزون_البان_الموحد'!H6,6:16
+BANANA_MASTER,3,مخزون_البان_الموحد,Unified bun master,5,A,J,A,1,المادة الخام,Text / blank,No,,,General,خبز البان (موحد),6:6
+BANANA_MASTER,3,مخزون_البان_الموحد,Unified bun master,5,A,J,B,2,الرصيد السابق (حبة),Number,No,,,"#,##0",50,6:6
+BANANA_MASTER,3,مخزون_البان_الموحد,Unified bun master,5,A,J,C,3,المنصرف الجديد (حبة),Number,No,,,"#,##0",0,6:6
+BANANA_MASTER,3,مخزون_البان_الموحد,Unified bun master,5,A,J,D,4,إجمالي المتاح,Formula - read-only,Yes,=B6+C6,,"#,##0",=B6+C6,6:6
+BANANA_MASTER,3,مخزون_البان_الموحد,Unified bun master,5,A,J,E,5,تالف / هدر (إدخال),Number,No,,,"#,##0",0,6:6
+BANANA_MASTER,3,مخزون_البان_الموحد,Unified bun master,5,A,J,F,6,إجمالي استهلاك الأقسام,Formula - read-only,Yes,=SUM(D11:D13),,"#,##0",=SUM(D11:D13),6:6
+BANANA_MASTER,3,مخزون_البان_الموحد,Unified bun master,5,A,J,G,7,المتبقي النظري,Formula - read-only,Yes,=D6-E6-F6,,"#,##0",=D6-E6-F6,6:6
+BANANA_MASTER,3,مخزون_البان_الموحد,Unified bun master,5,A,J,H,8,الجرد الفعلي (إدخال),Number,No,,,"#,##0",5,6:6
+BANANA_MASTER,3,مخزون_البان_الموحد,Unified bun master,5,A,J,I,9,صافي الفارق (عجز / زيادة),Formula - read-only,Yes,=H6-G6,,"+#,##0;-#,##0;0",=H6-G6,6:6
+BANANA_MASTER,3,مخزون_البان_الموحد,Unified bun master,5,A,J,J,10,الحالة,Formula - read-only,Yes,"=IF(I6=0,""مطابق (0)"",IF(I6<0,""عجز: ""&ABS(I6),""زيادة: ""&I6))",,General,"=IF(I6=0,""مطابق (0)"",IF(I6<0,""عجز: ""&ABS(I6),""زيادة: ""&I6))",6:6
+BANANA_DETAIL,3,مخزون_البان_الموحد,Unified bun distribution,10,A,F,A,1,القسم المستهلك,Text / blank,No,,,General,قسم البرجر,11:14
+BANANA_DETAIL,3,مخزون_البان_الموحد,Unified bun distribution,10,A,F,B,2,مصدر البيانات,Text / blank,No,,,General,ورقة (برجر) خلية E11,11:14
+BANANA_DETAIL,3,مخزون_البان_الموحد,Unified bun distribution,10,A,F,C,3,تفصيل الأصناف,Text / blank,No,,,General,برجر لحم ودجاج دبل وعادي + زنجر 2x2,11:14
+BANANA_DETAIL,3,مخزون_البان_الموحد,Unified bun distribution,10,A,F,D,4,الكمية المستهلكة (حبة),Formula - read-only,Yes,=برجر!E11,,"#,##0",=برجر!E11,11:14
+BANANA_DETAIL,3,مخزون_البان_الموحد,Unified bun distribution,10,A,F,E,5,نسبة الاستهلاك %,Formula - read-only,Yes,"=IF($F$6=0, 0, D11/$F$6)",,0.0%,"=IF($F$6=0, 0, D11/$F$6)",11:14
+BANANA_DETAIL,3,مخزون_البان_الموحد,Unified bun distribution,10,A,F,F,6,تفعيل احتساب بان الزنجر 1x1؟,Dropdown/Status,No,,"نعم,لا",General,لا,11:14
+TIME_ANALYTICS,4,التحليلات_الزمنية,Time analytics,6,A,I,A,1,التاريخ,Formula - read-only,Yes,=سجل_الأرشيف_اليومي!A6,,yyyy-mm-dd,=سجل_الأرشيف_اليومي!A6,7:17
+TIME_ANALYTICS,4,التحليلات_الزمنية,Time analytics,6,A,I,B,2,القسم,Formula - read-only,Yes,=سجل_الأرشيف_اليومي!B6,,General,=سجل_الأرشيف_اليومي!B6,7:17
+TIME_ANALYTICS,4,التحليلات_الزمنية,Time analytics,6,A,I,C,3,الصنف,Formula - read-only,Yes,=سجل_الأرشيف_اليومي!C6,,General,=سجل_الأرشيف_اليومي!C6,7:17
+TIME_ANALYTICS,4,التحليلات_الزمنية,Time analytics,6,A,I,D,4,الوحدة,Formula - read-only,Yes,=سجل_الأرشيف_اليومي!D6,,General,=سجل_الأرشيف_اليومي!D6,7:17
+TIME_ANALYTICS,4,التحليلات_الزمنية,Time analytics,6,A,I,E,5,إجمالي المتاح,Formula - read-only,Yes,=سجل_الأرشيف_اليومي!E6,,"#,##0.00",=سجل_الأرشيف_اليومي!E6,7:17
+TIME_ANALYTICS,4,التحليلات_الزمنية,Time analytics,6,A,I,F,6,الاستهلاك الفعلي,Formula - read-only,Yes,=سجل_الأرشيف_اليومي!F6,,"#,##0.00",=سجل_الأرشيف_اليومي!F6,7:17
+TIME_ANALYTICS,4,التحليلات_الزمنية,Time analytics,6,A,I,G,7,المتبقي الفعلي,Formula - read-only,Yes,=سجل_الأرشيف_اليومي!G6,,"#,##0.00",=سجل_الأرشيف_اليومي!G6,7:17
+TIME_ANALYTICS,4,التحليلات_الزمنية,Time analytics,6,A,I,H,8,صافي الفارق (عجز/زيادة),Formula - read-only,Yes,=سجل_الأرشيف_اليومي!H6,,"+#,##0.00;-#,##0.00;0",=سجل_الأرشيف_اليومي!H6,7:17
+TIME_ANALYTICS,4,التحليلات_الزمنية,Time analytics,6,A,I,I,9,الحالة,Formula - read-only,Yes,=سجل_الأرشيف_اليومي!I6,,General,=سجل_الأرشيف_اليومي!I6,7:17
+MAIN_ARCHIVE,5,سجل_الأرشيف_اليومي,Daily archive - FULL CRUD,5,A,I,A,1,التاريخ,Date,No,,,yyyy-mm-dd,2026-09-20 00:00:00,6:200
+MAIN_ARCHIVE,5,سجل_الأرشيف_اليومي,Daily archive - FULL CRUD,5,A,I,B,2,القسم,Text / blank,No,,,General,البان الموحد,6:200
+MAIN_ARCHIVE,5,سجل_الأرشيف_اليومي,Daily archive - FULL CRUD,5,A,I,C,3,الصنف,Text / blank,No,,,General,خبز البان (برجر + بروست),6:200
+MAIN_ARCHIVE,5,سجل_الأرشيف_اليومي,Daily archive - FULL CRUD,5,A,I,D,4,الوحدة,Text / blank,No,,,General,حبة,6:200
+MAIN_ARCHIVE,5,سجل_الأرشيف_اليومي,Daily archive - FULL CRUD,5,A,I,E,5,المتاح الكلي,Number,No,,,"#,##0.00",50,6:200
+MAIN_ARCHIVE,5,سجل_الأرشيف_اليومي,Daily archive - FULL CRUD,5,A,I,F,6,الاستهلاك الفعلي,Number,No,,,"#,##0.00",45,6:200
+MAIN_ARCHIVE,5,سجل_الأرشيف_اليومي,Daily archive - FULL CRUD,5,A,I,G,7,المتبقي الفعلي,Number,No,,,"#,##0.00",5,6:200
+MAIN_ARCHIVE,5,سجل_الأرشيف_اليومي,Daily archive - FULL CRUD,5,A,I,H,8,صافي الفارق,Number,No,,,"+#,##0.00;-#,##0.00;0",0,6:200
+MAIN_ARCHIVE,5,سجل_الأرشيف_اليومي,Daily archive - FULL CRUD,5,A,I,I,9,الحالة,Dropdown/Status,No,,"عجز,زيادة,مطابق",General,مطابق,6:200
+BEV_PEPSI,6,المشروبات الغازية,Beverages - block 1,3,A,I,A,1,الرصيد ,Number,No,,,"#,##0.##",379,4:4
+BEV_PEPSI,6,المشروبات الغازية,Beverages - block 1,3,A,I,B,2,الصرف الجديد ,Number,No,,,"#,##0.##",300,4:4
+BEV_PEPSI,6,المشروبات الغازية,Beverages - block 1,3,A,I,C,3,لحقة صرف,Number,No,,,"#,##0.##",120,4:4
+BEV_PEPSI,6,المشروبات الغازية,Beverages - block 1,3,A,I,D,4,اجمالي الرصيد,Formula - read-only,Yes,=A4+B4+C4,,"#,##0.##",=A4+B4+C4,4:4
+BEV_PEPSI,6,المشروبات الغازية,Beverages - block 1,3,A,I,E,5,المتبقي,Number,No,,,"#,##0.##",407,4:4
+BEV_PEPSI,6,المشروبات الغازية,Beverages - block 1,3,A,I,F,6,الكمية المباعة للمقارنه,Formula - read-only,Yes,=D4-E4,,"#,##0.##",=D4-E4,4:4
+BEV_PEPSI,6,المشروبات الغازية,Beverages - block 1,3,A,I,G,7,المباع في النظام,Number,No,,,"#,##0.##",392,4:4
+BEV_PEPSI,6,المشروبات الغازية,Beverages - block 1,3,A,I,H,8,العجز ,Formula - read-only,Yes,"=IF(G4>F4, G4-F4, 0)",,"#,##0.##","=IF(G4>F4, G4-F4, 0)",4:4
+BEV_PEPSI,6,المشروبات الغازية,Beverages - block 1,3,A,I,I,9,الزيادة,Formula - read-only,Yes,"=IF(F4>G4, F4-G4, 0)",,"#,##0.##","=IF(F4>G4, F4-G4, 0)",4:4
+BEV_WATER,6,المشروبات الغازية,Beverages - block 2,8,A,I,A,1,الرصيد ,Number,No,,,"#,##0.##",180,9:9
+BEV_WATER,6,المشروبات الغازية,Beverages - block 2,8,A,I,B,2,الصرف الجديد ,Number,No,,,"#,##0.##",100,9:9
+BEV_WATER,6,المشروبات الغازية,Beverages - block 2,8,A,I,C,3,لحقة صرف,Text / blank,No,,,"#,##0.##",,9:9
+BEV_WATER,6,المشروبات الغازية,Beverages - block 2,8,A,I,D,4,اجمالي الرصيد,Formula - read-only,Yes,=A9+B9+C9,,"#,##0.##",=A9+B9+C9,9:9
+BEV_WATER,6,المشروبات الغازية,Beverages - block 2,8,A,I,E,5,المتبقي,Number,No,,,"#,##0.##",81,9:9
+BEV_WATER,6,المشروبات الغازية,Beverages - block 2,8,A,I,F,6,الكمية المباعة للمقارنه,Formula - read-only,Yes,=D9-E9,,"#,##0.##",=D9-E9,9:9
+BEV_WATER,6,المشروبات الغازية,Beverages - block 2,8,A,I,G,7,المباع في النظام,Number,No,,,"#,##0.##",194,9:9
+BEV_WATER,6,المشروبات الغازية,Beverages - block 2,8,A,I,H,8,العجز ,Formula - read-only,Yes,"=IF(G9>F9, G9-F9, 0)",,"#,##0.##","=IF(G9>F9, G9-F9, 0)",9:9
+BEV_WATER,6,المشروبات الغازية,Beverages - block 2,8,A,I,I,9,الزيادة,Formula - read-only,Yes,"=IF(F9>G9, F9-G9, 0)",,"#,##0.##","=IF(F9>G9, F9-G9, 0)",9:9
+FAKHER_FULL,7,الفاخر,Full section grid,2,A,M,A,1,الكمية المباعة,Number,No,,,General,11,3:21
+FAKHER_FULL,7,الفاخر,Full section grid,2,A,M,B,2,الصنف,Text / blank,No,,,General,سلته,3:21
+FAKHER_FULL,7,الفاخر,Full section grid,2,A,M,C,3,اجمالي مبيعات اللحم,Formula - read-only,Yes,=A3*200/1000,,General,=A3*200/1000,3:21
+FAKHER_FULL,7,الفاخر,Full section grid,2,A,M,D,4,اجمالي مبيعات الدجاج,Formula - read-only,Yes,=A8*0.5,,General,=A8*0.5,3:21
+FAKHER_FULL,7,الفاخر,Full section grid,2,A,M,E,5,المصروف الدجاج,Text / blank,No,,,General,,3:21
+FAKHER_FULL,7,الفاخر,Full section grid,2,A,M,F,6,المصروف اللحم,Text / blank,No,,,General,,3:21
+FAKHER_FULL,7,الفاخر,Full section grid,2,A,M,G,7,الرصيد,Text / blank,No,,,General,,3:21
+FAKHER_FULL,7,الفاخر,Full section grid,2,A,M,H,8,الرصيد من واقع الجرد,Text / blank,No,,,General,,3:21
+FAKHER_FULL,7,الفاخر,Full section grid,2,A,M,I,9,مردود مبيعات,Text / blank,No,,,General,,3:21
+FAKHER_FULL,7,الفاخر,Full section grid,2,A,M,J,10,زيادة ,Text / blank,No,,,General,,3:21
+FAKHER_FULL,7,الفاخر,Full section grid,2,A,M,K,11,عجز ,Text / blank,No,,,General,,3:21
+FAKHER_FULL,7,الفاخر,Full section grid,2,A,M,L,12,زيادة ,Text / blank,No,,,General,,3:21
+FAKHER_FULL,7,الفاخر,Full section grid,2,A,M,M,13,عجز ,Text / blank,No,,,General,,3:21
+MASHAWI_FULL,8,المشاوي,Full section grid,2,A,T,A,1,الكمية المباعة,Number,No,,,General,1,3:23
+MASHAWI_FULL,8,المشاوي,Full section grid,2,A,T,B,2,الصنف,Text / blank,No,,,General,سندوتش كباب بلادي,3:23
+MASHAWI_FULL,8,المشاوي,Full section grid,2,A,T,C,3,الرصيد السابق,Number,No,,,General,15,3:23
+MASHAWI_FULL,8,المشاوي,Full section grid,2,A,T,D,4,اجمالي مبيعات الدجاج,Formula - read-only,Yes,=A4*0.5,,General,=A4*0.5,3:23
+MASHAWI_FULL,8,المشاوي,Full section grid,2,A,T,E,5,مبيعات المسحب,Formula - read-only,Yes,=A7*270,,General,=A7*270,3:23
+MASHAWI_FULL,8,المشاوي,Full section grid,2,A,T,F,6,مبيعات اللحم,Formula - read-only,Yes,=A3*90,,General,=A3*90,3:23
+MASHAWI_FULL,8,المشاوي,Full section grid,2,A,T,G,7,مبيعات الفروج,Formula - read-only,Yes,=A9/4,,General,=A9/4,3:23
+MASHAWI_FULL,8,المشاوي,Full section grid,2,A,T,H,8,المصروف الدجاج,Number,No,,,General,30,3:23
+MASHAWI_FULL,8,المشاوي,Full section grid,2,A,T,I,9,الرصيد,Formula - read-only,Yes,=C4+H4-J4,,General,=C4+H4-J4,3:23
+MASHAWI_FULL,8,المشاوي,Full section grid,2,A,T,J,10,الرصيد من واقع الجرد,Number,No,,,General,12.5,3:23
+MASHAWI_FULL,8,المشاوي,Full section grid,2,A,T,K,11,مردود مبيعات,Text / blank,No,,,General,,3:23
+MASHAWI_FULL,8,المشاوي,Full section grid,2,A,T,L,12,زيادة,Text / blank,No,,,General,,3:23
+MASHAWI_FULL,8,المشاوي,Full section grid,2,A,T,M,13,عجز,Text / blank,No,,,General,,3:23
+MASHAWI_FULL,8,المشاوي,Full section grid,2,A,T,N,14,المحول للفروج,Number,No,,,General,10,3:23
+MASHAWI_FULL,8,المشاوي,Full section grid,2,A,T,O,15,,Text / blank,No,,,General,,3:23
+MASHAWI_FULL,8,المشاوي,Full section grid,2,A,T,P,16,,Formula - read-only,Yes,=P4+P5-P6,,General,110,3:23
+MASHAWI_FULL,8,المشاوي,Full section grid,2,A,T,Q,17,1,Number,No,,,General,74,3:23
+MASHAWI_FULL,8,المشاوي,Full section grid,2,A,T,R,18,سندوتش كباب بلادي,Text / blank,No,,,General,نصف دجاج فحم بلدي,3:23
+MASHAWI_FULL,8,المشاوي,Full section grid,2,A,T,S,19,,Formula - read-only,Yes,"=VLOOKUP(R3,A2:M24,1,FALSE)",,General,"=VLOOKUP(R3,A2:M24,1,FALSE)",3:23
+MASHAWI_FULL,8,المشاوي,Full section grid,2,A,T,T,20,,Formula - read-only,Yes,"=VLOOKUP(B4,$P$3:$R$16,3,0)",,General,"=VLOOKUP(B4,$P$3:$R$16,3,0)",3:23
+BURGER_SALES,9,برجر,Sales grid,1,A,G,A,1,رئيسي,Number,No,,,"#,##0.##",3,2:12
+BURGER_SALES,9,برجر,Sales grid,1,A,G,B,2,الصنف,Number,No,,,"#,##0.##",برجر الحمراء دجاج دبل+شبس2*2,2:12
+BURGER_SALES,9,برجر,Sales grid,1,A,G,C,3,الجبن,Formula - read-only,Yes,=A2*2,,"#,##0.##",=A2*2,2:12
+BURGER_SALES,9,برجر,Sales grid,1,A,G,D,4,زنجر,Formula - read-only,Yes,=A7*1,,"#,##0.##",=A7*1,2:12
+BURGER_SALES,9,برجر,Sales grid,1,A,G,E,5,بان,Formula - read-only,Yes,=A2*1,,"#,##0.##",=A2*1,2:12
+BURGER_SALES,9,برجر,Sales grid,1,A,G,F,6,لحم ,Formula - read-only,Yes,=A3*100,,"#,##0.##",=A3*100,2:12
+BURGER_SALES,9,برجر,Sales grid,1,A,G,G,7,دجاج,Formula - read-only,Yes,=A2*200,,"#,##0.##",=A2*200,2:12
+BURGER_INV,9,برجر,Inventory grid,14,A,H,A,1,المكون / الصنف,Text / blank,No,,,General,الجبن (شرائح),15:19
+BURGER_INV,9,برجر,Inventory grid,14,A,H,B,2,الرصيد السابق,Formula - read-only,Yes,='مخزون_البان_الموحد'!B6,,"#,##0.##",0,15:19
+BURGER_INV,9,برجر,Inventory grid,14,A,H,C,3,المصروف الجديد,Formula - read-only,Yes,='مخزون_البان_الموحد'!C6,,"#,##0.##",0,15:19
+BURGER_INV,9,برجر,Inventory grid,14,A,H,D,4,إجمالي المتاح,Formula - read-only,Yes,=B15+C15,,"#,##0.##",=B15+C15,15:19
+BURGER_INV,9,برجر,Inventory grid,14,A,H,E,5,الاستهلاك الفعلي (المباع),Formula - read-only,Yes,=C11,,"#,##0.##",=C11,15:19
+BURGER_INV,9,برجر,Inventory grid,14,A,H,F,6,المتبقي الفعلي (الجرد),Formula - read-only,Yes,='مخزون_البان_الموحد'!H6,,"#,##0.##",0,15:19
+BURGER_INV,9,برجر,Inventory grid,14,A,H,G,7,النتيجة (عجز / زيادة),Formula - read-only,Yes,"=IF(H15=0,""مطابق (0)"",IF(H15<0,""عجز: ""&ABS(H15),""زيادة: ""&H15))",,General,"=IF(H15=0,""مطابق (0)"",IF(H15<0,""عجز: ""&ABS(H15),""زيادة: ""&H15))",15:19
+BURGER_INV,9,برجر,Inventory grid,14,A,H,H,8,صافي الفارق (رقمي),Formula - read-only,Yes,=F15-(D15-E15),,"+#,##0.00;-#,##0.00;0",=F15-(D15-E15),15:19
+MADGHOUT_FULL,10,المضغوط,Full section grid,3,A,O,A,1,الكمية المباعة,Number,No,,,General,33,4:15
+MADGHOUT_FULL,10,المضغوط,Full section grid,3,A,O,B,2,الصنف,Text / blank,No,,,General,نص دجاج مضغوط مع الرز,4:15
+MADGHOUT_FULL,10,المضغوط,Full section grid,3,A,O,C,3,اجمالي مبيعات الدجاج,Formula - read-only,Yes,=A4*0.5,,General,=A4*0.5,4:15
+MADGHOUT_FULL,10,المضغوط,Full section grid,3,A,O,D,4,المصروف الدجاج,Text / blank,No,,,General,,4:15
+MADGHOUT_FULL,10,المضغوط,Full section grid,3,A,O,E,5,الرصيد,Text / blank,No,,,General,,4:15
+MADGHOUT_FULL,10,المضغوط,Full section grid,3,A,O,F,6,الرصيد من واقع الجرد,Text / blank,No,,,General,,4:15
+MADGHOUT_FULL,10,المضغوط,Full section grid,3,A,O,G,7,مردود مبيعات,Text / blank,No,,,General,,4:15
+MADGHOUT_FULL,10,المضغوط,Full section grid,3,A,O,H,8,زيادة,Text / blank,No,,,General,,4:15
+MADGHOUT_FULL,10,المضغوط,Full section grid,3,A,O,I,9,عجز,Text / blank,No,,,General,,4:15
+MADGHOUT_FULL,10,المضغوط,Full section grid,3,A,O,J,10,عقدة,Text / blank,No,,,General,,4:15
+MADGHOUT_FULL,10,المضغوط,Full section grid,3,A,O,K,11,,Text / blank,No,,,General,,4:15
+MADGHOUT_FULL,10,المضغوط,Full section grid,3,A,O,L,12,صافي العجز بعد خصم المحروقات,Text / blank,No,,,General,,4:15
+MADGHOUT_FULL,10,المضغوط,Full section grid,3,A,O,M,13,عجز المحروقات ,Text / blank,No,,,General,,4:15
+MADGHOUT_FULL,10,المضغوط,Full section grid,3,A,O,N,14,,Text / blank,No,,,General,,4:15
+MADGHOUT_FULL,10,المضغوط,Full section grid,3,A,O,O,15,المرحل للمحروقات,Formula - read-only,Yes,=SUM(O6:O8),,General,4.5,4:15
+ZURBIAN_FULL,11,الزربيان,Full section grid,3,A,P,A,1,الكمية المباعة,Number,No,,,General,11,4:12
+ZURBIAN_FULL,11,الزربيان,Full section grid,3,A,P,B,2,الصنف,Text / blank,No,,,General,ربع دجاج زربيان,4:12
+ZURBIAN_FULL,11,الزربيان,Full section grid,3,A,P,C,3,اجمالي مبيعات اللحم,Formula - read-only,Yes,=A5*1,,General,=A5*1,4:12
+ZURBIAN_FULL,11,الزربيان,Full section grid,3,A,P,D,4,ملاحظات,Text / blank,No,,,General,,4:12
+ZURBIAN_FULL,11,الزربيان,Full section grid,3,A,P,E,5,اجمالي مبيعات الدجاج,Formula - read-only,Yes,=A4/4,,General,=A4/4,4:12
+ZURBIAN_FULL,11,الزربيان,Full section grid,3,A,P,F,6,المصروف الدجاج,Number,No,,,General,30,4:12
+ZURBIAN_FULL,11,الزربيان,Full section grid,3,A,P,G,7,المصروف اللحم,Text / blank,No,,,General,,4:12
+ZURBIAN_FULL,11,الزربيان,Full section grid,3,A,P,H,8,الرصيد,Text / blank,No,,,General,,4:12
+ZURBIAN_FULL,11,الزربيان,Full section grid,3,A,P,I,9,المتبقي من الدجاج,Text / blank,No,,,General,,4:12
+ZURBIAN_FULL,11,الزربيان,Full section grid,3,A,P,J,10,المتبقي من اللحم,Text / blank,No,,,General,,4:12
+ZURBIAN_FULL,11,الزربيان,Full section grid,3,A,P,K,11,الرصيد من واقع الجرد,Text / blank,No,,,General,,4:12
+ZURBIAN_FULL,11,الزربيان,Full section grid,3,A,P,L,12,مردود مبيعات,Text / blank,No,,,General,,4:12
+ZURBIAN_FULL,11,الزربيان,Full section grid,3,A,P,M,13,زيادة دجاج,Text / blank,No,,,General,,4:12
+ZURBIAN_FULL,11,الزربيان,Full section grid,3,A,P,N,14,عجز دجاج,Text / blank,No,,,General,,4:12
+ZURBIAN_FULL,11,الزربيان,Full section grid,3,A,P,O,15,زيادة لحم,Text / blank,No,,,General,,4:12
+ZURBIAN_FULL,11,الزربيان,Full section grid,3,A,P,P,16,عجز لحم,Text / blank,No,,,General,,4:12
+KUNAFA_GRID,12,الكنافة,Formula grid,2,A,Q,A,1,الكنافة,Text / blank,No,,,General,اجمالي القشطة,3:11
+KUNAFA_GRID,12,الكنافة,Formula grid,2,A,Q,B,2,='لوحة_التحكم_والرئيسية'!D4,Number,No,,,General,48,3:11
+KUNAFA_GRID,12,الكنافة,Formula grid,2,A,Q,C,3,,Number,No,,,General,14,3:11
+KUNAFA_GRID,12,الكنافة,Formula grid,2,A,Q,D,4,,Formula - read-only,Yes,=B3+C3,,General,=B3+C3,3:11
+KUNAFA_GRID,12,الكنافة,Formula grid,2,A,Q,E,5,الرصيد بعد المبيعات,Formula - read-only,Yes,=D3-J11,,General,=D3-J11,3:11
+KUNAFA_GRID,12,الكنافة,Formula grid,2,A,Q,F,6,الرصيد الفعلي من واقع الجرد ,Text / blank,No,,,General,,3:11
+KUNAFA_GRID,12,الكنافة,Formula grid,2,A,Q,G,7,,Text / blank,No,,,General,,3:11
+KUNAFA_GRID,12,الكنافة,Formula grid,2,A,Q,H,8,عجز ,Formula - read-only,Yes,"=IF(F3<E3, E3-F3, 0)",,General,"=IF(F3<E3, E3-F3, 0)",3:11
+KUNAFA_GRID,12,الكنافة,Formula grid,2,A,Q,I,9,زيادة,Formula - read-only,Yes,"=IF(F3>E3, F3-E3, 0)",,General,"=IF(F3>E3, F3-E3, 0)",3:11
+KUNAFA_GRID,12,الكنافة,Formula grid,2,A,Q,J,10,المبيعات,Formula - read-only,Yes,=K3*0.5,,General,=K3*0.5,3:11
+KUNAFA_GRID,12,الكنافة,Formula grid,2,A,Q,K,11,الكمية المباعة من واقع النظام,Number,No,,,General,59,3:11
+KUNAFA_GRID,12,الكنافة,Formula grid,2,A,Q,L,12,المبيعات من واقع النظام,Number,No,,,General,كنافه,3:11
+KUNAFA_GRID,12,الكنافة,Formula grid,2,A,Q,M,13,,Text / blank,No,,,General,,3:11
+KUNAFA_GRID,12,الكنافة,Formula grid,2,A,Q,N,14,,Formula - read-only,Yes,=B3-J11,,General,=B3-J11,3:11
+KUNAFA_GRID,12,الكنافة,Formula grid,2,A,Q,O,15,,Text / blank,No,,,General,,3:11
+KUNAFA_GRID,12,الكنافة,Formula grid,2,A,Q,P,16,,Number,No,,,General,59,3:11
+KUNAFA_GRID,12,الكنافة,Formula grid,2,A,Q,Q,17,,Text / blank,No,,,General,كنافه,3:11
+KUNAFA_INV,12,الكنافة,Inventory grid,14,A,H,A,1,الصنف,Text / blank,No,,,General,قشطة الكنافة (وحدة),15:24
+KUNAFA_INV,12,الكنافة,Inventory grid,14,A,H,B,2,الرصيد السابق,Formula - read-only,Yes,=B3,,"#,##0.##",=B3,15:24
+KUNAFA_INV,12,الكنافة,Inventory grid,14,A,H,C,3,الوارد / المصروف,Formula - read-only,Yes,=C3,,"#,##0.##",=C3,15:24
+KUNAFA_INV,12,الكنافة,Inventory grid,14,A,H,D,4,إجمالي المتاح,Formula - read-only,Yes,=B15+C15,,"#,##0.##",=B15+C15,15:24
+KUNAFA_INV,12,الكنافة,Inventory grid,14,A,H,E,5,المباع في النظام,Formula - read-only,Yes,=J11,,"#,##0.##",=J11,15:24
+KUNAFA_INV,12,الكنافة,Inventory grid,14,A,H,F,6,المتبقي الفعلي (الجرد),Formula - read-only,Yes,=F3,,"#,##0.##",=F3,15:24
+KUNAFA_INV,12,الكنافة,Inventory grid,14,A,H,G,7,النتيجة (عجز / زيادة),Formula - read-only,Yes,"=IF(H15=0,""مطابق (0)"",IF(H15<0,""عجز: ""&ABS(H15),""زيادة: ""&H15))",,General,"=IF(H15=0,""مطابق (0)"",IF(H15<0,""عجز: ""&ABS(H15),""زيادة: ""&H15))",15:24
+KUNAFA_INV,12,الكنافة,Inventory grid,14,A,H,H,8,صافي الفارق (رقمي),Formula - read-only,Yes,=F15-(D15-E15),,"+#,##0.00;-#,##0.00;0",=F15-(D15-E15),15:24
+FRIDGE_FULL,13,الثلاجة,Fridge grid,2,A,O,A,1,رصيد الدجاج في الثلاجة,Text / blank,No,,,General,دجاج أبو 1000 مشاوي ومضغوط وعربي,3:19
+FRIDGE_FULL,13,الثلاجة,Fridge grid,2,A,O,B,2,الرصيد السابق,Number,No,,,"#,##0.##",11.5,3:19
+FRIDGE_FULL,13,الثلاجة,Fridge grid,2,A,O,C,3,مورد للثلاجة,Number,No,,,"#,##0.##",150,3:19
+FRIDGE_FULL,13,الثلاجة,Fridge grid,2,A,O,D,4,البروست,Number,No,,,"#,##0.##",80,3:19
+FRIDGE_FULL,13,الثلاجة,Fridge grid,2,A,O,E,5,الفاخر,Number,No,,,"#,##0.##",25,3:19
+FRIDGE_FULL,13,الثلاجة,Fridge grid,2,A,O,F,6,المضغوط,Number,No,,,"#,##0.##",42,3:19
+FRIDGE_FULL,13,الثلاجة,Fridge grid,2,A,O,G,7,المشاوي,Number,No,,,"#,##0.##",50,3:19
+FRIDGE_FULL,13,الثلاجة,Fridge grid,2,A,O,H,8,الزربيان,Number,No,,,"#,##0.##",11.5,3:19
+FRIDGE_FULL,13,الثلاجة,Fridge grid,2,A,O,I,9,البرجر,Text / blank,No,,,"#,##0.##",,3:19
+FRIDGE_FULL,13,الثلاجة,Fridge grid,2,A,O,J,10,الشوارما,Number,No,,,"#,##0.##",180,3:19
+FRIDGE_FULL,13,الثلاجة,Fridge grid,2,A,O,K,11,المتبقي في الثلاجة,Formula - read-only,Yes,=B3+C3-D3-E3-F3-G3-H3-J3-I3,,"#,##0.##",=B3+C3-D3-E3-F3-G3-H3-J3-I3,3:19
+FRIDGE_FULL,13,الثلاجة,Fridge grid,2,A,O,L,12,الرصيد من واقع الجرد في الثلاجة,Number,No,,,"#,##0.##",0,3:19
+FRIDGE_FULL,13,الثلاجة,Fridge grid,2,A,O,M,13,العجز,Formula - read-only,Yes,"=IF(ISBLANK(L3), 0, IF(L3<K3, K3-L3, 0))",,"#,##0.##","=IF(ISBLANK(L3), 0, IF(L3<K3, K3-L3, 0))",3:19
+FRIDGE_FULL,13,الثلاجة,Fridge grid,2,A,O,N,14,الزيادة,Formula - read-only,Yes,"=IF(ISBLANK(L3), 0, IF(L3>K3, L3-K3, 0))",,"#,##0.##","=IF(ISBLANK(L3), 0, IF(L3>K3, L3-K3, 0))",3:19
+FRIDGE_FULL,13,الثلاجة,Fridge grid,2,A,O,O,15,حالة الجرد,Formula - read-only,Yes,"=IF(ISBLANK(L3), ""بانتظار الجرد"", IF(L3=K3, ""مطابق"", IF(L3<K3, ""عجز"", ""زيادة"")))",,General,"=IF(ISBLANK(L3), ""بانتظار الجرد"", IF(L3=K3, ""مطابق"", IF(L3<K3, ""عجز"", ""زيادة"")))",3:19
+BROAST_SALES,14,البروست,Broast sales,5,B,H,B,2,الكمية المباعة,Number,No,,,"#,##0.##",241,6:12
+BROAST_SALES,14,البروست,Broast sales,5,B,H,C,3,اسم الوجبة / الصنف,Text / blank,No,,,General,برست قطعتين دجاج بلدي,6:12
+BROAST_SALES,14,البروست,Broast sales,5,B,H,D,4,عدد القطع في الوجبة,Number,No,,,"#,##0.##",2,6:12
+BROAST_SALES,14,البروست,Broast sales,5,B,H,E,5,إجمالي قطع الدجاج,Formula - read-only,Yes,=B6*D6,,"#,##0.##",=B6*D6,6:12
+BROAST_SALES,14,البروست,Broast sales,5,B,H,F,6,ملاحظات التشغيل,Text / blank,No,,,General,وجبة أساسية,6:12
+BROAST_SALES,14,البروست,Broast sales,5,B,H,G,7,كود الصنف,Text / blank,No,,,General,BR-01,6:12
+BROAST_SALES,14,البروست,Broast sales,5,B,H,H,8,التصنيف,Text / blank,No,,,General,دجاج,6:12
+BROAST_INV,14,البروست,Broast inventory,16,B,I,B,2,المكون / الصنف,Text / blank,No,,,General,قطع دجاج بروست (بالقطعة),17:21
+BROAST_INV,14,البروست,Broast inventory,16,B,I,C,3,الرصيد السابق,Number,No,,,"#,##0.##",408,17:21
+BROAST_INV,14,البروست,Broast inventory,16,B,I,D,4,المصروف الجديد,Number,No,,,"#,##0.##",1032,17:21
+BROAST_INV,14,البروست,Broast inventory,16,B,I,E,5,إجمالي المتاح,Formula - read-only,Yes,=C17+D17,,"#,##0.##",=C17+D17,17:21
+BROAST_INV,14,البروست,Broast inventory,16,B,I,F,6,الاستهلاك الفعلي (المباع),Formula - read-only,Yes,=E13,,"#,##0.##",=E13,17:21
+BROAST_INV,14,البروست,Broast inventory,16,B,I,G,7,المتبقي الفعلي (الجرد),Number,No,,,"#,##0.##",918,17:21
+BROAST_INV,14,البروست,Broast inventory,16,B,I,H,8,النتيجة (عجز / زيادة),Formula - read-only,Yes,"=IF(I17=0,""مطابق (0)"",IF(I17<0,""عجز: ""&ABS(I17),""زيادة: ""&I17))",,General,"=IF(I17=0,""مطابق (0)"",IF(I17<0,""عجز: ""&ABS(I17),""زيادة: ""&I17))",17:21
+BROAST_INV,14,البروست,Broast inventory,16,B,I,I,9,صافي الفارق (رقمي),Formula - read-only,Yes,=G17-(E17-F17),,"+#,##0.00;-#,##0.00;0",=G17-(E17-F17),17:21
+PIZZA_SALES,16,بيتزا,Pizza sales,1,A,D,A,1,الكمية,Number,No,,,"#,##0.##",1,2:9
+PIZZA_SALES,16,بيتزا,Pizza sales,1,A,D,B,2,الصنف,Text / blank,No,,,"#,##0.##",بيتزاء خضار كبير نحيف,2:9
+PIZZA_SALES,16,بيتزا,Pizza sales,1,A,D,C,3,الجبن بالحبة,Number,No,,,"#,##0.##",150,2:9
+PIZZA_SALES,16,بيتزا,Pizza sales,1,A,D,D,4,اجمالي الجبن,Formula - read-only,Yes,=C2*A2,,"#,##0.##",=C2*A2,2:9
+PIZZA_INV,16,بيتزا,Pizza inventory,13,A,H,A,1,المادة الخام,Text / blank,No,,,General,جبن موزاريلا (جرام),14:15
+PIZZA_INV,16,بيتزا,Pizza inventory,13,A,H,B,2,الرصيد السابق (جرام/حبة),Number,No,,,"#,##0.##",2250,14:15
+PIZZA_INV,16,بيتزا,Pizza inventory,13,A,H,C,3,المصروف الجديد,Number,No,,,"#,##0.##",0,14:15
+PIZZA_INV,16,بيتزا,Pizza inventory,13,A,H,D,4,إجمالي المتاح,Formula - read-only,Yes,=B14+C14,,"#,##0.##",=B14+C14,14:15
+PIZZA_INV,16,بيتزا,Pizza inventory,13,A,H,E,5,الاستهلاك الفعلي (المباع),Formula - read-only,Yes,=D10,,"#,##0.##",=D10,14:15
+PIZZA_INV,16,بيتزا,Pizza inventory,13,A,H,F,6,المتبقي الفعلي (الجرد),Number,No,,,"#,##0.##",0,14:15
+PIZZA_INV,16,بيتزا,Pizza inventory,13,A,H,G,7,النتيجة (عجز / زيادة),Formula - read-only,Yes,"=IF(H14=0,""مطابق (0)"",IF(H14<0,""عجز: ""&ABS(H14),""زيادة: ""&H14))",,General,"=IF(H14=0,""مطابق (0)"",IF(H14<0,""عجز: ""&ABS(H14),""زيادة: ""&H14))",14:15
+PIZZA_INV,16,بيتزا,Pizza inventory,13,A,H,H,8,صافي الفارق (رقمي),Formula - read-only,Yes,=F14-(D14-E14),,"+#,##0.00;-#,##0.00;0",=F14-(D14-E14),14:15
+BROAST_HIST_01,15,أرشيف البروست,Historical daily block 01,5,A,Q,A,1,,Text / blank,No,,,General,الرصيد المرحل,6:32
+BROAST_HIST_01,15,أرشيف البروست,Historical daily block 01,5,A,Q,B,2,الرصيد بالاكياس,Number,No,,,General,17,6:32
+BROAST_HIST_01,15,أرشيف البروست,Historical daily block 01,5,A,Q,C,3,,Text / blank,No,,,General,,6:32
+BROAST_HIST_01,15,أرشيف البروست,Historical daily block 01,5,A,Q,D,4,الرصيد بالقطع,Formula - read-only,Yes,=B6*24,,General,=B6*24,6:32
+BROAST_HIST_01,15,أرشيف البروست,Historical daily block 01,5,A,Q,E,5,الصرف الجديد,Formula - read-only,Yes,=H7-G28,,General,129,6:32
+BROAST_HIST_01,15,أرشيف البروست,Historical daily block 01,5,A,Q,F,6,رصيد الصرف الجديد بالقطع,Formula - read-only,Yes,=E7*8,,General,=E7*8,6:32
+BROAST_HIST_01,15,أرشيف البروست,Historical daily block 01,5,A,Q,G,7,رصيد الصرف الجديد بالاكياس,Formula - read-only,Yes,=F7/24,,General,=F7/24,6:32
+BROAST_HIST_01,15,أرشيف البروست,Historical daily block 01,5,A,Q,H,8,اجمالي قطع البروست المرحلة ليوم الثلاثاء,Formula - read-only,Yes,=D6+F7,,General,=D6+F7,6:32
+BROAST_HIST_01,15,أرشيف البروست,Historical daily block 01,5,A,Q,I,9,,Text / blank,No,,,General,صوص الحمراء سبايسي,6:32
+BROAST_HIST_01,15,أرشيف البروست,Historical daily block 01,5,A,Q,J,10,,Text / blank,No,,,General,,6:32
+BROAST_HIST_01,15,أرشيف البروست,Historical daily block 01,5,A,Q,K,11,,Text / blank,No,,,General,,6:32
+BROAST_HIST_01,15,أرشيف البروست,Historical daily block 01,5,A,Q,L,12,,Number,No,,,General,3,6:32
+BROAST_HIST_01,15,أرشيف البروست,Historical daily block 01,5,A,Q,M,13,,Text / blank,No,,,General,صوص الحمراء سبايسي,6:32
+BROAST_HIST_01,15,أرشيف البروست,Historical daily block 01,5,A,Q,N,14,,Text / blank,No,,,General,,6:32
+BROAST_HIST_01,15,أرشيف البروست,Historical daily block 01,5,A,Q,O,15,,Number,No,,,General,12,6:32
+BROAST_HIST_01,15,أرشيف البروست,Historical daily block 01,5,A,Q,P,16,,Text / blank,No,,,General,صوص الحمراء سبايسي,6:32
+BROAST_HIST_01,15,أرشيف البروست,Historical daily block 01,5,A,Q,Q,17,,Text / blank,No,,,General,,6:32
+BROAST_HIST_02,15,أرشيف البروست,Historical daily block 02,33,A,Q,A,1,,Formula - read-only,Yes,=B54*9,,General,الرصيد المرحل,34:60
+BROAST_HIST_02,15,أرشيف البروست,Historical daily block 02,33,A,Q,B,2,الرصيد بالاكياس,Number,No,,,General,بالقطع,34:60
+BROAST_HIST_02,15,أرشيف البروست,Historical daily block 02,33,A,Q,C,3,القطع,Formula - read-only,Yes,=C37+C38,,General,1022,34:60
+BROAST_HIST_02,15,أرشيف البروست,Historical daily block 02,33,A,Q,D,4,الرصيد بالقطع,Formula - read-only,Yes,=B34*24+C34,,General,=B34*24+C34,34:60
+BROAST_HIST_02,15,أرشيف البروست,Historical daily block 02,33,A,Q,E,5,الصرف الجديد,Formula - read-only,Yes,=H35-C43,,General,60,34:60
+BROAST_HIST_02,15,أرشيف البروست,Historical daily block 02,33,A,Q,F,6,رصيد الصرف الجديد بالقطع,Formula - read-only,Yes,=E35*8,,General,=E35*8,34:60
+BROAST_HIST_02,15,أرشيف البروست,Historical daily block 02,33,A,Q,G,7,رصيد الصرف الجديد بالاكياس,Formula - read-only,Yes,=F35/24,,General,=F35/24,34:60
+BROAST_HIST_02,15,أرشيف البروست,Historical daily block 02,33,A,Q,H,8,اجمالي قطع البروست المرحلة ليوم الجمعة,Formula - read-only,Yes,=D34+F35,,General,=D34+F35,34:60
+BROAST_HIST_02,15,أرشيف البروست,Historical daily block 02,33,A,Q,I,9,,Text / blank,No,,,General,صوص الحمراء سبايسي,34:60
+BROAST_HIST_02,15,أرشيف البروست,Historical daily block 02,33,A,Q,J,10,,Number,No,,,General,6,34:60
+BROAST_HIST_02,15,أرشيف البروست,Historical daily block 02,33,A,Q,K,11,,Formula - read-only,Yes,=D34-G56,,General,=D34-G56,34:60
+BROAST_HIST_02,15,أرشيف البروست,Historical daily block 02,33,A,Q,L,12,,Formula - read-only,Yes,=L36*L35,,General,5,34:60
+BROAST_HIST_02,15,أرشيف البروست,Historical daily block 02,33,A,Q,M,13,,Formula - read-only,Yes,=L39+F35,,General,=L39+F35,34:60
+BROAST_HIST_02,15,أرشيف البروست,Historical daily block 02,33,A,Q,N,14,20,Formula - read-only,Yes,=N35/3,,General,200,34:60
+BROAST_HIST_02,15,أرشيف البروست,Historical daily block 02,33,A,Q,O,15,1500,Formula - read-only,Yes,=N35*75,,General,15000,34:60
+BROAST_HIST_02,15,أرشيف البروست,Historical daily block 02,33,A,Q,P,16,,Text / blank,No,,,General,,34:60
+BROAST_HIST_02,15,أرشيف البروست,Historical daily block 02,33,A,Q,Q,17,,Text / blank,No,,,General,,34:60
+BROAST_HIST_03,15,أرشيف البروست,Historical daily block 03,61,A,Q,A,1,,Number,No,,,General,الرصيد المرحل,62:89
+BROAST_HIST_03,15,أرشيف البروست,Historical daily block 03,61,A,Q,B,2,الرصيد بالاكياس,Number,No,,,General,37,62:89
+BROAST_HIST_03,15,أرشيف البروست,Historical daily block 03,61,A,Q,C,3,القطع,Formula - read-only,Yes,=C65+C66,,General,14,62:89
+BROAST_HIST_03,15,أرشيف البروست,Historical daily block 03,61,A,Q,D,4,الرصيد بالقطع,Formula - read-only,Yes,=B62*24+C62,,General,=B62*24+C62,62:89
+BROAST_HIST_03,15,أرشيف البروست,Historical daily block 03,61,A,Q,E,5,الصرف الجديد,Formula - read-only,Yes,=H63-C71,,General,95,62:89
+BROAST_HIST_03,15,أرشيف البروست,Historical daily block 03,61,A,Q,F,6,رصيد الصرف الجديد بالقطع,Formula - read-only,Yes,=E63*8,,General,=E63*8,62:89
+BROAST_HIST_03,15,أرشيف البروست,Historical daily block 03,61,A,Q,G,7,رصيد الصرف الجديد بالاكياس,Formula - read-only,Yes,=F63/24,,General,=F63/24,62:89
+BROAST_HIST_03,15,أرشيف البروست,Historical daily block 03,61,A,Q,H,8,اجمالي قطع البروست المرحلة ليوم الثلاثاء,Formula - read-only,Yes,=D62+F63,,General,=D62+F63,62:89
+BROAST_HIST_03,15,أرشيف البروست,Historical daily block 03,61,A,Q,I,9,,Text / blank,No,,,General,صوص الحمراء سبايسي,62:89
+BROAST_HIST_03,15,أرشيف البروست,Historical daily block 03,61,A,Q,J,10,,Number,No,,,General,9,62:89
+BROAST_HIST_03,15,أرشيف البروست,Historical daily block 03,61,A,Q,K,11,=K59/K60,Text / blank,No,,,General,19 كيس,62:89
+BROAST_HIST_03,15,أرشيف البروست,Historical daily block 03,61,A,Q,L,12,,Text / blank,No,,,General,,62:89
+BROAST_HIST_03,15,أرشيف البروست,Historical daily block 03,61,A,Q,M,13,,Text / blank,No,,,General,,62:89
+BROAST_HIST_03,15,أرشيف البروست,Historical daily block 03,61,A,Q,N,14,,Text / blank,No,,,General,,62:89
+BROAST_HIST_03,15,أرشيف البروست,Historical daily block 03,61,A,Q,O,15,,Text / blank,No,,,General,,62:89
+BROAST_HIST_03,15,أرشيف البروست,Historical daily block 03,61,A,Q,P,16,,Text / blank,No,,,General,,62:89
+BROAST_HIST_03,15,أرشيف البروست,Historical daily block 03,61,A,Q,Q,17,,Text / blank,No,,,General,,62:89
+BROAST_HIST_04,15,أرشيف البروست,Historical daily block 04,90,A,Q,A,1,,Number,No,,,General,الرصيد المرحل,91:117
+BROAST_HIST_04,15,أرشيف البروست,Historical daily block 04,90,A,Q,B,2,الرصيد بالاكياس,Number,No,,,General,41,91:117
+BROAST_HIST_04,15,أرشيف البروست,Historical daily block 04,90,A,Q,C,3,القطع,Formula - read-only,Yes,=C94+C95,,General,10,91:117
+BROAST_HIST_04,15,أرشيف البروست,Historical daily block 04,90,A,Q,D,4,الرصيد بالقطع,Formula - read-only,Yes,=B91*24+C91,,General,=B91*24+C91,91:117
+BROAST_HIST_04,15,أرشيف البروست,Historical daily block 04,90,A,Q,E,5,الصرف الجديد,Formula - read-only,Yes,=H92-C100,,General,130,91:117
+BROAST_HIST_04,15,أرشيف البروست,Historical daily block 04,90,A,Q,F,6,رصيد الصرف الجديد بالقطع,Formula - read-only,Yes,=E92*8,,General,=E92*8,91:117
+BROAST_HIST_04,15,أرشيف البروست,Historical daily block 04,90,A,Q,G,7,رصيد الصرف الجديد بالاكياس,Formula - read-only,Yes,=F92/24,,General,=F92/24,91:117
+BROAST_HIST_04,15,أرشيف البروست,Historical daily block 04,90,A,Q,H,8,اجمالي قطع البروست المرحلة ليوم الجمعة,Formula - read-only,Yes,=D91+F92,,General,=D91+F92,91:117
+BROAST_HIST_04,15,أرشيف البروست,Historical daily block 04,90,A,Q,I,9,,Text / blank,No,,,General,صوص الحمراء سبايسي,91:117
+BROAST_HIST_04,15,أرشيف البروست,Historical daily block 04,90,A,Q,J,10,,Text / blank,No,,,General,,91:117
+BROAST_HIST_04,15,أرشيف البروست,Historical daily block 04,90,A,Q,K,11,,Text / blank,No,,,General,,91:117
+BROAST_HIST_04,15,أرشيف البروست,Historical daily block 04,90,A,Q,L,12,,Text / blank,No,,,General,,91:117
+BROAST_HIST_04,15,أرشيف البروست,Historical daily block 04,90,A,Q,M,13,,Text / blank,No,,,General,,91:117
+BROAST_HIST_04,15,أرشيف البروست,Historical daily block 04,90,A,Q,N,14,,Text / blank,No,,,General,,91:117
+BROAST_HIST_04,15,أرشيف البروست,Historical daily block 04,90,A,Q,O,15,,Text / blank,No,,,General,,91:117
+BROAST_HIST_04,15,أرشيف البروست,Historical daily block 04,90,A,Q,P,16,,Text / blank,No,,,General,,91:117
+BROAST_HIST_04,15,أرشيف البروست,Historical daily block 04,90,A,Q,Q,17,,Text / blank,No,,,General,,91:117
+BROAST_HIST_05,15,أرشيف البروست,Historical daily block 05,118,A,Q,A,1,,Number,No,,,General,الرصيد المرحل,119:144
+BROAST_HIST_05,15,أرشيف البروست,Historical daily block 05,118,A,Q,B,2,الرصيد بالاكياس,Number,No,,,General,بالقطع,119:144
+BROAST_HIST_05,15,أرشيف البروست,Historical daily block 05,118,A,Q,C,3,القطع,Formula - read-only,Yes,=C122+C123,,General,1174,119:144
+BROAST_HIST_05,15,أرشيف البروست,Historical daily block 05,118,A,Q,D,4,الرصيد بالقطع,Formula - read-only,Yes,=B119*24+C119,,General,=B119*24+C119,119:144
+BROAST_HIST_05,15,أرشيف البروست,Historical daily block 05,118,A,Q,E,5,الصرف الجديد,Formula - read-only,Yes,=H120-C128,,General,المقارنة,119:144
+BROAST_HIST_05,15,أرشيف البروست,Historical daily block 05,118,A,Q,F,6,رصيد الصرف الجديد بالقطع,Formula - read-only,Yes,=E120*8,,General,=E120*8,119:144
+BROAST_HIST_05,15,أرشيف البروست,Historical daily block 05,118,A,Q,G,7,رصيد الصرف الجديد بالاكياس,Formula - read-only,Yes,=F120/24,,General,=F120/24,119:144
+BROAST_HIST_05,15,أرشيف البروست,Historical daily block 05,118,A,Q,H,8,اجمالي قطع البروست المرحلة ليوم الجمعة,Formula - read-only,Yes,=D119+F120,,General,=D119+F120,119:144
+BROAST_HIST_05,15,أرشيف البروست,Historical daily block 05,118,A,Q,I,9,,Text / blank,No,,,General,صوص الحمراء سبايسي,119:144
+BROAST_HIST_05,15,أرشيف البروست,Historical daily block 05,118,A,Q,J,10,,Number,No,,,General,7,119:144
+BROAST_HIST_05,15,أرشيف البروست,Historical daily block 05,118,A,Q,K,11,,Text / blank,No,,,General,صوص الحمراء سبايسي,119:144
+BROAST_HIST_05,15,أرشيف البروست,Historical daily block 05,118,A,Q,L,12,,Text / blank,No,,,General,,119:144
+BROAST_HIST_05,15,أرشيف البروست,Historical daily block 05,118,A,Q,M,13,,Text / blank,No,,,General,,119:144
+BROAST_HIST_05,15,أرشيف البروست,Historical daily block 05,118,A,Q,N,14,,Text / blank,No,,,General,,119:144
+BROAST_HIST_05,15,أرشيف البروست,Historical daily block 05,118,A,Q,O,15,,Text / blank,No,,,General,,119:144
+BROAST_HIST_05,15,أرشيف البروست,Historical daily block 05,118,A,Q,P,16,,Text / blank,No,,,General,,119:144
+BROAST_HIST_05,15,أرشيف البروست,Historical daily block 05,118,A,Q,Q,17,,Text / blank,No,,,General,,119:144
+BROAST_HIST_06,15,أرشيف البروست,Historical daily block 06,145,A,Q,A,1,,Number,No,,,General,الرصيد المرحل,146:170
+BROAST_HIST_06,15,أرشيف البروست,Historical daily block 06,145,A,Q,B,2,الرصيد بالاكياس,Number,No,,,General,بالقطع,146:170
+BROAST_HIST_06,15,أرشيف البروست,Historical daily block 06,145,A,Q,C,3,القطع,Formula - read-only,Yes,=C149+C150,,General,407,146:170
+BROAST_HIST_06,15,أرشيف البروست,Historical daily block 06,145,A,Q,D,4,الرصيد بالقطع,Formula - read-only,Yes,=B146*24+C146,,General,=B146*24+C146,146:170
+BROAST_HIST_06,15,أرشيف البروست,Historical daily block 06,145,A,Q,E,5,الصرف الجديد,Formula - read-only,Yes,=H147-C155,,General,80,146:170
+BROAST_HIST_06,15,أرشيف البروست,Historical daily block 06,145,A,Q,F,6,رصيد الصرف الجديد بالقطع,Formula - read-only,Yes,=E147*8,,General,=E147*8,146:170
+BROAST_HIST_06,15,أرشيف البروست,Historical daily block 06,145,A,Q,G,7,رصيد الصرف الجديد بالاكياس,Formula - read-only,Yes,=F147/24,,General,=F147/24,146:170
+BROAST_HIST_06,15,أرشيف البروست,Historical daily block 06,145,A,Q,H,8,اجمالي قطع البروست المرحلة ليوم الجمعة,Formula - read-only,Yes,=D146+F147,,General,=D146+F147,146:170
+BROAST_HIST_06,15,أرشيف البروست,Historical daily block 06,145,A,Q,I,9,,Text / blank,No,,,General,صوص الحمراء سبايسي,146:170
+BROAST_HIST_06,15,أرشيف البروست,Historical daily block 06,145,A,Q,J,10,,Number,No,,,General,4,146:170
+BROAST_HIST_06,15,أرشيف البروست,Historical daily block 06,145,A,Q,K,11,,Text / blank,No,,,General,صوص الحمراء سبايسي,146:170
+BROAST_HIST_06,15,أرشيف البروست,Historical daily block 06,145,A,Q,L,12,,Text / blank,No,,,General,,146:170
+BROAST_HIST_06,15,أرشيف البروست,Historical daily block 06,145,A,Q,M,13,,Text / blank,No,,,General,,146:170
+BROAST_HIST_06,15,أرشيف البروست,Historical daily block 06,145,A,Q,N,14,,Text / blank,No,,,General,,146:170
+BROAST_HIST_06,15,أرشيف البروست,Historical daily block 06,145,A,Q,O,15,,Text / blank,No,,,General,,146:170
+BROAST_HIST_06,15,أرشيف البروست,Historical daily block 06,145,A,Q,P,16,,Text / blank,No,,,General,,146:170
+BROAST_HIST_06,15,أرشيف البروست,Historical daily block 06,145,A,Q,Q,17,,Text / blank,No,,,General,,146:170
+BROAST_HIST_07,15,أرشيف البروست,Historical daily block 07,171,A,Q,A,1,,Formula - read-only,Yes,=B192*9,,General,الرصيد المرحل,172:198
+BROAST_HIST_07,15,أرشيف البروست,Historical daily block 07,171,A,Q,B,2,الرصيد بالاكياس,Number,No,,,General,بالقطع,172:198
+BROAST_HIST_07,15,أرشيف البروست,Historical daily block 07,171,A,Q,C,3,القطع,Formula - read-only,Yes,=C175+C176,,General,314,172:198
+BROAST_HIST_07,15,أرشيف البروست,Historical daily block 07,171,A,Q,D,4,الرصيد بالقطع,Formula - read-only,Yes,=B172*24+C172,,General,=B172*24+C172,172:198
+BROAST_HIST_07,15,أرشيف البروست,Historical daily block 07,171,A,Q,E,5,الصرف الجديد,Formula - read-only,Yes,=H173-C181,,General,100,172:198
+BROAST_HIST_07,15,أرشيف البروست,Historical daily block 07,171,A,Q,F,6,رصيد الصرف الجديد بالقطع,Formula - read-only,Yes,=E173*8,,General,=E173*8,172:198
+BROAST_HIST_07,15,أرشيف البروست,Historical daily block 07,171,A,Q,G,7,رصيد الصرف الجديد بالاكياس,Formula - read-only,Yes,=F173/24,,General,=F173/24,172:198
+BROAST_HIST_07,15,أرشيف البروست,Historical daily block 07,171,A,Q,H,8,اجمالي قطع البروست المرحلة ليوم الجمعة,Formula - read-only,Yes,=D172+F173,,General,=D172+F173,172:198
+BROAST_HIST_07,15,أرشيف البروست,Historical daily block 07,171,A,Q,I,9,,Text / blank,No,,,General,صوص الحمراء سبايسي,172:198
+BROAST_HIST_07,15,أرشيف البروست,Historical daily block 07,171,A,Q,J,10,,Number,No,,,General,10,172:198
+BROAST_HIST_07,15,أرشيف البروست,Historical daily block 07,171,A,Q,K,11,,Text / blank,No,,,General,صوص الحمراء سبايسي,172:198
+BROAST_HIST_07,15,أرشيف البروست,Historical daily block 07,171,A,Q,L,12,,Text / blank,No,,,General,,172:198
+BROAST_HIST_07,15,أرشيف البروست,Historical daily block 07,171,A,Q,M,13,,Text / blank,No,,,General,,172:198
+BROAST_HIST_07,15,أرشيف البروست,Historical daily block 07,171,A,Q,N,14,,Text / blank,No,,,General,,172:198
+BROAST_HIST_07,15,أرشيف البروست,Historical daily block 07,171,A,Q,O,15,,Text / blank,No,,,General,,172:198
+BROAST_HIST_07,15,أرشيف البروست,Historical daily block 07,171,A,Q,P,16,,Text / blank,No,,,General,,172:198
+BROAST_HIST_07,15,أرشيف البروست,Historical daily block 07,171,A,Q,Q,17,,Text / blank,No,,,General,,172:198
+BROAST_HIST_08,15,أرشيف البروست,Historical daily block 08,199,A,Q,A,1,,Formula - read-only,Yes,=B220*9,,General,الرصيد المرحل,200:228
+BROAST_HIST_08,15,أرشيف البروست,Historical daily block 08,199,A,Q,B,2,الرصيد بالاكياس,Number,No,,,General,بالقطع,200:228
+BROAST_HIST_08,15,أرشيف البروست,Historical daily block 08,199,A,Q,C,3,القطع,Formula - read-only,Yes,=C203+C204,,General,216,200:228
+BROAST_HIST_08,15,أرشيف البروست,Historical daily block 08,199,A,Q,D,4,الرصيد بالقطع,Formula - read-only,Yes,=B200*24+C200,,General,=B200*24+C200,200:228
+BROAST_HIST_08,15,أرشيف البروست,Historical daily block 08,199,A,Q,E,5,الصرف الجديد,Formula - read-only,Yes,=H201-C209,,General,120,200:228
+BROAST_HIST_08,15,أرشيف البروست,Historical daily block 08,199,A,Q,F,6,رصيد الصرف الجديد بالقطع,Formula - read-only,Yes,=E201*8,,General,=E201*8,200:228
+BROAST_HIST_08,15,أرشيف البروست,Historical daily block 08,199,A,Q,G,7,رصيد الصرف الجديد بالاكياس,Formula - read-only,Yes,=F201/24,,General,=F201/24,200:228
+BROAST_HIST_08,15,أرشيف البروست,Historical daily block 08,199,A,Q,H,8,اجمالي قطع البروست المرحلة ليوم الجمعة,Formula - read-only,Yes,=D200+F201,,General,=D200+F201,200:228
+BROAST_HIST_08,15,أرشيف البروست,Historical daily block 08,199,A,Q,I,9,,Text / blank,No,,,General,صوص الحمراء سبايسي,200:228
+BROAST_HIST_08,15,أرشيف البروست,Historical daily block 08,199,A,Q,J,10,,Number,No,,,General,3,200:228
+BROAST_HIST_08,15,أرشيف البروست,Historical daily block 08,199,A,Q,K,11,,Text / blank,No,,,General,صوص الحمراء سبايسي,200:228
+BROAST_HIST_08,15,أرشيف البروست,Historical daily block 08,199,A,Q,L,12,,Text / blank,No,,,General,,200:228
+BROAST_HIST_08,15,أرشيف البروست,Historical daily block 08,199,A,Q,M,13,,Text / blank,No,,,General,,200:228
+BROAST_HIST_08,15,أرشيف البروست,Historical daily block 08,199,A,Q,N,14,,Text / blank,No,,,General,,200:228
+BROAST_HIST_08,15,أرشيف البروست,Historical daily block 08,199,A,Q,O,15,,Text / blank,No,,,General,,200:228
+BROAST_HIST_08,15,أرشيف البروست,Historical daily block 08,199,A,Q,P,16,,Text / blank,No,,,General,,200:228
+BROAST_HIST_08,15,أرشيف البروست,Historical daily block 08,199,A,Q,Q,17,,Text / blank,No,,,General,,200:228
+BROAST_HIST_09,15,أرشيف البروست,Historical daily block 09,229,A,Q,A,1,,Formula - read-only,Yes,=B250*9,,General,الرصيد المرحل,230:255
+BROAST_HIST_09,15,أرشيف البروست,Historical daily block 09,229,A,Q,B,2,الرصيد بالاكياس,Number,No,,,General,بالقطع,230:255
+BROAST_HIST_09,15,أرشيف البروست,Historical daily block 09,229,A,Q,C,3,القطع,Formula - read-only,Yes,=C233+C234,,General,550,230:255
+BROAST_HIST_09,15,أرشيف البروست,Historical daily block 09,229,A,Q,D,4,الرصيد بالقطع,Formula - read-only,Yes,=B230*24+C230,,General,=B230*24+C230,230:255
+BROAST_HIST_09,15,أرشيف البروست,Historical daily block 09,229,A,Q,E,5,الصرف الجديد,Formula - read-only,Yes,=H231-C239,,General,50,230:255
+BROAST_HIST_09,15,أرشيف البروست,Historical daily block 09,229,A,Q,F,6,رصيد الصرف الجديد بالقطع,Formula - read-only,Yes,=E231*8,,General,=E231*8,230:255
+BROAST_HIST_09,15,أرشيف البروست,Historical daily block 09,229,A,Q,G,7,رصيد الصرف الجديد بالاكياس,Formula - read-only,Yes,=F231/24,,General,=F231/24,230:255
+BROAST_HIST_09,15,أرشيف البروست,Historical daily block 09,229,A,Q,H,8,اجمالي قطع البروست المرحلة ليوم الجمعة,Formula - read-only,Yes,=D230+F231,,General,=D230+F231,230:255
+BROAST_HIST_09,15,أرشيف البروست,Historical daily block 09,229,A,Q,I,9,,Text / blank,No,,,General,صوص الحمراء سبايسي,230:255
+BROAST_HIST_09,15,أرشيف البروست,Historical daily block 09,229,A,Q,J,10,,Number,No,,,General,2,230:255
+BROAST_HIST_09,15,أرشيف البروست,Historical daily block 09,229,A,Q,K,11,,Text / blank,No,,,General,صوص الحمراء سبايسي,230:255
+BROAST_HIST_09,15,أرشيف البروست,Historical daily block 09,229,A,Q,L,12,,Text / blank,No,,,General,,230:255
+BROAST_HIST_09,15,أرشيف البروست,Historical daily block 09,229,A,Q,M,13,,Text / blank,No,,,General,,230:255
+BROAST_HIST_09,15,أرشيف البروست,Historical daily block 09,229,A,Q,N,14,,Text / blank,No,,,General,,230:255
+BROAST_HIST_09,15,أرشيف البروست,Historical daily block 09,229,A,Q,O,15,,Text / blank,No,,,General,,230:255
+BROAST_HIST_09,15,أرشيف البروست,Historical daily block 09,229,A,Q,P,16,,Text / blank,No,,,General,,230:255
+BROAST_HIST_09,15,أرشيف البروست,Historical daily block 09,229,A,Q,Q,17,,Text / blank,No,,,General,,230:255
+BROAST_HIST_10,15,أرشيف البروست,Historical daily block 10,256,A,Q,A,1,,Formula - read-only,Yes,=B277*9,,General,الرصيد المرحل,257:283
+BROAST_HIST_10,15,أرشيف البروست,Historical daily block 10,256,A,Q,B,2,الرصيد بالاكياس,Number,No,,,General,بالقطع,257:283
+BROAST_HIST_10,15,أرشيف البروست,Historical daily block 10,256,A,Q,C,3,القطع,Formula - read-only,Yes,=C260+C261,,General,646,257:283
+BROAST_HIST_10,15,أرشيف البروست,Historical daily block 10,256,A,Q,D,4,الرصيد بالقطع,Formula - read-only,Yes,=B257*24+C257,,General,=B257*24+C257,257:283
+BROAST_HIST_10,15,أرشيف البروست,Historical daily block 10,256,A,Q,E,5,الصرف الجديد,Formula - read-only,Yes,=H258-C266,,General,60,257:283
+BROAST_HIST_10,15,أرشيف البروست,Historical daily block 10,256,A,Q,F,6,رصيد الصرف الجديد بالقطع,Formula - read-only,Yes,=E258*8,,General,=E258*8,257:283
+BROAST_HIST_10,15,أرشيف البروست,Historical daily block 10,256,A,Q,G,7,رصيد الصرف الجديد بالاكياس,Formula - read-only,Yes,=F258/24,,General,=F258/24,257:283
+BROAST_HIST_10,15,أرشيف البروست,Historical daily block 10,256,A,Q,H,8,اجمالي قطع البروست المرحلة ليوم الجمعة,Formula - read-only,Yes,=D257+F258,,General,=D257+F258,257:283
+BROAST_HIST_10,15,أرشيف البروست,Historical daily block 10,256,A,Q,I,9,,Text / blank,No,,,General,,257:283
+BROAST_HIST_10,15,أرشيف البروست,Historical daily block 10,256,A,Q,J,10,,Text / blank,No,,,General,,257:283
+BROAST_HIST_10,15,أرشيف البروست,Historical daily block 10,256,A,Q,K,11,,Text / blank,No,,,General,,257:283
+BROAST_HIST_10,15,أرشيف البروست,Historical daily block 10,256,A,Q,L,12,,Text / blank,No,,,General,,257:283
+BROAST_HIST_10,15,أرشيف البروست,Historical daily block 10,256,A,Q,M,13,,Text / blank,No,,,General,,257:283
+BROAST_HIST_10,15,أرشيف البروست,Historical daily block 10,256,A,Q,N,14,,Text / blank,No,,,General,,257:283
+BROAST_HIST_10,15,أرشيف البروست,Historical daily block 10,256,A,Q,O,15,,Text / blank,No,,,General,,257:283
+BROAST_HIST_10,15,أرشيف البروست,Historical daily block 10,256,A,Q,P,16,,Text / blank,No,,,General,,257:283
+BROAST_HIST_10,15,أرشيف البروست,Historical daily block 10,256,A,Q,Q,17,,Text / blank,No,,,General,,257:283
+BROAST_HIST_11,15,أرشيف البروست,Historical daily block 11,284,A,Q,A,1,,Formula - read-only,Yes,=B305*9,,General,الرصيد المرحل,285:310
+BROAST_HIST_11,15,أرشيف البروست,Historical daily block 11,284,A,Q,B,2,الرصيد بالاكياس,Number,No,,,General,بالقطع,285:310
+BROAST_HIST_11,15,أرشيف البروست,Historical daily block 11,284,A,Q,C,3,القطع,Formula - read-only,Yes,=C288+C289,,General,542,285:310
+BROAST_HIST_11,15,أرشيف البروست,Historical daily block 11,284,A,Q,D,4,الرصيد بالقطع,Formula - read-only,Yes,=B285*24+C285,,General,=B285*24+C285,285:310
+BROAST_HIST_11,15,أرشيف البروست,Historical daily block 11,284,A,Q,E,5,الصرف الجديد,Formula - read-only,Yes,=H286-C294,,General,60,285:310
+BROAST_HIST_11,15,أرشيف البروست,Historical daily block 11,284,A,Q,F,6,رصيد الصرف الجديد بالقطع,Formula - read-only,Yes,=E286*8,,General,=E286*8,285:310
+BROAST_HIST_11,15,أرشيف البروست,Historical daily block 11,284,A,Q,G,7,رصيد الصرف الجديد بالاكياس,Formula - read-only,Yes,=F286/24,,General,=F286/24,285:310
+BROAST_HIST_11,15,أرشيف البروست,Historical daily block 11,284,A,Q,H,8,اجمالي قطع البروست المرحلة ليوم الجمعة,Formula - read-only,Yes,=D285+F286,,General,=D285+F286,285:310
+BROAST_HIST_11,15,أرشيف البروست,Historical daily block 11,284,A,Q,I,9,,Text / blank,No,,,General,,285:310
+BROAST_HIST_11,15,أرشيف البروست,Historical daily block 11,284,A,Q,J,10,,Text / blank,No,,,General,,285:310
+BROAST_HIST_11,15,أرشيف البروست,Historical daily block 11,284,A,Q,K,11,,Text / blank,No,,,General,,285:310
+BROAST_HIST_11,15,أرشيف البروست,Historical daily block 11,284,A,Q,L,12,,Text / blank,No,,,General,,285:310
+BROAST_HIST_11,15,أرشيف البروست,Historical daily block 11,284,A,Q,M,13,,Text / blank,No,,,General,,285:310
+BROAST_HIST_11,15,أرشيف البروست,Historical daily block 11,284,A,Q,N,14,,Text / blank,No,,,General,,285:310
+BROAST_HIST_11,15,أرشيف البروست,Historical daily block 11,284,A,Q,O,15,,Text / blank,No,,,General,,285:310
+BROAST_HIST_11,15,أرشيف البروست,Historical daily block 11,284,A,Q,P,16,,Text / blank,No,,,General,,285:310
+BROAST_HIST_11,15,أرشيف البروست,Historical daily block 11,284,A,Q,Q,17,,Text / blank,No,,,General,,285:310
+BROAST_HIST_12,15,أرشيف البروست,Historical daily block 12,311,A,Q,A,1,,Formula - read-only,Yes,=B332*9,,General,الرصيد المرحل,312:337
+BROAST_HIST_12,15,أرشيف البروست,Historical daily block 12,311,A,Q,B,2,الرصيد بالاكياس,Number,No,,,General,بالقطع,312:337
+BROAST_HIST_12,15,أرشيف البروست,Historical daily block 12,311,A,Q,C,3,القطع,Formula - read-only,Yes,=C315+C316,,General,738,312:337
+BROAST_HIST_12,15,أرشيف البروست,Historical daily block 12,311,A,Q,D,4,الرصيد بالقطع,Formula - read-only,Yes,=B312*24+C312,,General,=B312*24+C312,312:337
+BROAST_HIST_12,15,أرشيف البروست,Historical daily block 12,311,A,Q,E,5,الصرف الجديد,Formula - read-only,Yes,=H313-C321,,General,80,312:337
+BROAST_HIST_12,15,أرشيف البروست,Historical daily block 12,311,A,Q,F,6,رصيد الصرف الجديد بالقطع,Formula - read-only,Yes,=E313*8,,General,=E313*8,312:337
+BROAST_HIST_12,15,أرشيف البروست,Historical daily block 12,311,A,Q,G,7,رصيد الصرف الجديد بالاكياس,Formula - read-only,Yes,=F313/24,,General,=F313/24,312:337
+BROAST_HIST_12,15,أرشيف البروست,Historical daily block 12,311,A,Q,H,8,اجمالي قطع البروست المرحلة ليوم الجمعة,Formula - read-only,Yes,=D312+F313,,General,=D312+F313,312:337
+BROAST_HIST_12,15,أرشيف البروست,Historical daily block 12,311,A,Q,I,9,,Text / blank,No,,,General,,312:337
+BROAST_HIST_12,15,أرشيف البروست,Historical daily block 12,311,A,Q,J,10,,Text / blank,No,,,General,,312:337
+BROAST_HIST_12,15,أرشيف البروست,Historical daily block 12,311,A,Q,K,11,,Text / blank,No,,,General,,312:337
+BROAST_HIST_12,15,أرشيف البروست,Historical daily block 12,311,A,Q,L,12,,Text / blank,No,,,General,,312:337
+BROAST_HIST_12,15,أرشيف البروست,Historical daily block 12,311,A,Q,M,13,,Text / blank,No,,,General,,312:337
+BROAST_HIST_12,15,أرشيف البروست,Historical daily block 12,311,A,Q,N,14,,Text / blank,No,,,General,,312:337
+BROAST_HIST_12,15,أرشيف البروست,Historical daily block 12,311,A,Q,O,15,,Text / blank,No,,,General,,312:337
+BROAST_HIST_12,15,أرشيف البروست,Historical daily block 12,311,A,Q,P,16,,Text / blank,No,,,General,,312:337
+BROAST_HIST_12,15,أرشيف البروست,Historical daily block 12,311,A,Q,Q,17,,Text / blank,No,,,General,,312:337
+BROAST_HIST_13,15,أرشيف البروست,Historical daily block 13,338,A,Q,A,1,,Formula - read-only,Yes,=B359*9,,General,الرصيد المرحل,339:365
+BROAST_HIST_13,15,أرشيف البروست,Historical daily block 13,338,A,Q,B,2,الرصيد بالاكياس,Number,No,,,General,بالقطع,339:365
+BROAST_HIST_13,15,أرشيف البروست,Historical daily block 13,338,A,Q,C,3,القطع,Formula - read-only,Yes,=C342+C343,,General,590,339:365
+BROAST_HIST_13,15,أرشيف البروست,Historical daily block 13,338,A,Q,D,4,الرصيد بالقطع,Formula - read-only,Yes,=B339*24+C339,,General,=B339*24+C339,339:365
+BROAST_HIST_13,15,أرشيف البروست,Historical daily block 13,338,A,Q,E,5,الصرف الجديد,Formula - read-only,Yes,=H340-C348,,General,80,339:365
+BROAST_HIST_13,15,أرشيف البروست,Historical daily block 13,338,A,Q,F,6,رصيد الصرف الجديد بالقطع,Formula - read-only,Yes,=E340*8,,General,=E340*8,339:365
+BROAST_HIST_13,15,أرشيف البروست,Historical daily block 13,338,A,Q,G,7,رصيد الصرف الجديد بالاكياس,Formula - read-only,Yes,=F340/24,,General,=F340/24,339:365
+BROAST_HIST_13,15,أرشيف البروست,Historical daily block 13,338,A,Q,H,8,اجمالي قطع البروست المرحلة ليوم الجمعة,Formula - read-only,Yes,=D339+F340,,General,=D339+F340,339:365
+BROAST_HIST_13,15,أرشيف البروست,Historical daily block 13,338,A,Q,I,9,,Text / blank,No,,,General,,339:365
+BROAST_HIST_13,15,أرشيف البروست,Historical daily block 13,338,A,Q,J,10,,Text / blank,No,,,General,,339:365
+BROAST_HIST_13,15,أرشيف البروست,Historical daily block 13,338,A,Q,K,11,,Text / blank,No,,,General,,339:365
+BROAST_HIST_13,15,أرشيف البروست,Historical daily block 13,338,A,Q,L,12,,Text / blank,No,,,General,,339:365
+BROAST_HIST_13,15,أرشيف البروست,Historical daily block 13,338,A,Q,M,13,,Text / blank,No,,,General,,339:365
+BROAST_HIST_13,15,أرشيف البروست,Historical daily block 13,338,A,Q,N,14,,Text / blank,No,,,General,,339:365
+BROAST_HIST_13,15,أرشيف البروست,Historical daily block 13,338,A,Q,O,15,,Text / blank,No,,,General,,339:365
+BROAST_HIST_13,15,أرشيف البروست,Historical daily block 13,338,A,Q,P,16,,Text / blank,No,,,General,,339:365
+BROAST_HIST_13,15,أرشيف البروست,Historical daily block 13,338,A,Q,Q,17,,Text / blank,No,,,General,,339:365
+BROAST_HIST_14,15,أرشيف البروست,Historical daily block 14,366,A,Q,A,1,,Formula - read-only,Yes,=B387*9,,General,الرصيد المرحل,367:390
+BROAST_HIST_14,15,أرشيف البروست,Historical daily block 14,366,A,Q,B,2,الرصيد بالاكياس,Number,No,,,General,بالقطع,367:390
+BROAST_HIST_14,15,أرشيف البروست,Historical daily block 14,366,A,Q,C,3,القطع,Formula - read-only,Yes,=C370+C371,,General,644,367:390
+BROAST_HIST_14,15,أرشيف البروست,Historical daily block 14,366,A,Q,D,4,الرصيد بالقطع,Formula - read-only,Yes,=B367*24+C367,,General,=B367*24+C367,367:390
+BROAST_HIST_14,15,أرشيف البروست,Historical daily block 14,366,A,Q,E,5,الصرف الجديد,Formula - read-only,Yes,=H368-C376,,General,150,367:390
+BROAST_HIST_14,15,أرشيف البروست,Historical daily block 14,366,A,Q,F,6,رصيد الصرف الجديد بالقطع,Formula - read-only,Yes,=E368*8,,General,=E368*8,367:390
+BROAST_HIST_14,15,أرشيف البروست,Historical daily block 14,366,A,Q,G,7,رصيد الصرف الجديد بالاكياس,Formula - read-only,Yes,=F368/24,,General,=F368/24,367:390
+BROAST_HIST_14,15,أرشيف البروست,Historical daily block 14,366,A,Q,H,8,اجمالي قطع البروست المرحلة ليوم الجمعة,Formula - read-only,Yes,=D367+F368,,General,=D367+F368,367:390
+BROAST_HIST_14,15,أرشيف البروست,Historical daily block 14,366,A,Q,I,9,,Text / blank,No,,,General,,367:390
+BROAST_HIST_14,15,أرشيف البروست,Historical daily block 14,366,A,Q,J,10,,Text / blank,No,,,General,,367:390
+BROAST_HIST_14,15,أرشيف البروست,Historical daily block 14,366,A,Q,K,11,,Text / blank,No,,,General,,367:390
+BROAST_HIST_14,15,أرشيف البروست,Historical daily block 14,366,A,Q,L,12,,Text / blank,No,,,General,,367:390
+BROAST_HIST_14,15,أرشيف البروست,Historical daily block 14,366,A,Q,M,13,,Text / blank,No,,,General,,367:390
+BROAST_HIST_14,15,أرشيف البروست,Historical daily block 14,366,A,Q,N,14,,Text / blank,No,,,General,,367:390
+BROAST_HIST_14,15,أرشيف البروست,Historical daily block 14,366,A,Q,O,15,,Text / blank,No,,,General,,367:390
+BROAST_HIST_14,15,أرشيف البروست,Historical daily block 14,366,A,Q,P,16,,Text / blank,No,,,General,,367:390
+BROAST_HIST_14,15,أرشيف البروست,Historical daily block 14,366,A,Q,Q,17,,Text / blank,No,,,General,,367:390
