@@ -2,10 +2,17 @@
 
 Built directly from the real `نظام_رعد_لإدارة_المخزون_والعجوزات_v9.xlsx` workbook (16 sheets). No placeholder data.
 
-## Download
-- `Raad_App_Deliverables.zip` - complete bundle: macro-enabled workbook, Step 1 audits, Step 2 UI/control/RGB docs, Step 3 VBA sources, one-click AutoBuilder, regenerating script, original workbook and `START_HERE.txt`.
-- `Raad_App_Workbook_Only.zip` - just the `_App.xlsm`, `OPEN_ME.txt` and `README.md`.
-- `نظام_رعد_لإدارة_المخزون_والعجوزات_v9_App.xlsm` - the ready-to-open Excel app itself.
+## Download from GitHub
+
+All deliverables are committed to branch `arena/8e565a9e-fawaz`.
+
+- **Whole branch as one ZIP:** https://github.com/raad280/FAWAZ/archive/refs/heads/arena/8e565a9e-fawaz.zip
+- **Complete bundle:** https://github.com/raad280/FAWAZ/raw/refs/heads/arena/8e565a9e-fawaz/Raad_App_Deliverables.zip
+- **Workbook-only bundle:** https://github.com/raad280/FAWAZ/raw/refs/heads/arena/8e565a9e-fawaz/Raad_App_Workbook_Only.zip
+- **Ready-to-open Excel app:** https://github.com/raad280/FAWAZ/raw/refs/heads/arena/8e565a9e-fawaz/نظام_رعد_لإدارة_المخزون_والعجوزات_v9_App.xlsm
+- **Browse all files:** https://github.com/raad280/FAWAZ/tree/arena/8e565a9e-fawaz
+
+The `Raad_App_Deliverables.zip` contains the macro-enabled `_App.xlsm`, Step 1 audits, Step 2 UI/control/RGB docs, Step 3 VBA sources, one-click AutoBuilder, regenerating script, original workbook and `START_HERE.txt`.
 
 ## Quick start
 1. Download and extract a ZIP.
